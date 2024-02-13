@@ -17,11 +17,11 @@ pub enum ReviewInstructions {
 }
 
 #[derive(BorshDeserialize)]
-struct ReviewPayload {
-    title: String,
-    description: String,
-    rating: u8,
-    location: String,
+pub struct ReviewPayload {
+    pub title: String,
+    pub description: String,
+    pub rating: u8,
+    pub location: String,
 }
 
 impl ReviewInstructions {
